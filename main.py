@@ -8,7 +8,7 @@ while TextSpeed <= 3 and TextSpeed > 0:
     txtspeed = 0.25
 else:
 print("This text speed is not valid, please enter fast, normal or slow\n")
-
+ 
 import sys
 import time
 def slowprint(s):
