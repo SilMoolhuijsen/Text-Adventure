@@ -76,13 +76,14 @@ def start_game():
     time.sleep(COMMA)
     slowprint(" you also feel your ankles and torso have been tied to the chair.")
     time.sleep(PERIOD)
-    slowprint(" You don't know how or why you're here.")
+    slowprint(" You hear deep voices talking in the background.")
     time.sleep(PERIOD)
-    slowprint(" But you know you have to get out here immediately.\n")
+    slowprint(" You have no idea how or why you're here.")
+    time.sleep(PERIOD)
+    slowprint(" But you know you have to get out here of as soon as possible.\n")
     time.sleep(PERIOD)
     input("Press Enter")
-    slowprint("\n")
+    slowprint("\nYou know you don't have any weapons on you,")
   start()
-  
 
 start_game()
