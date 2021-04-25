@@ -9,6 +9,9 @@ txtSpeed2 = ["Slow", "slow", "2"]
 txtSpeed1 = ["Very Slow", "very slow", "very Slow", "Very slow", "1"]
 END_SENTENCE = [".", "!", "?"]
 COMMA = ","
+def user_input():
+  input("\033[32m")
+  print("\033[0m")
 
 def start_game():
   ts = 0.0075
@@ -22,9 +25,9 @@ def start_game():
         time.sleep(ts * 16)
       else:
         time.sleep(ts)
-
+        
   TextSpeed = slowprint("Choose a text speed, Very Slow (1), Slow (2), Normal (3), Fast (4) or Very Fast (5): ")
-  TextSpeed = input()
+  TextSpeed = user_input()
   if TextSpeed in txtSpeed5:
     ts = 0.005
   elif TextSpeed in txtSpeed4:
@@ -36,7 +39,7 @@ def start_game():
   elif TextSpeed in txtSpeed1:
     ts = 0.1
   else:
-    slowprint("\nThat is not a valid text speed. You can only choose Very Slow (1), Slow (2), Normal (3), Fast (4) or Very Fast (5).\n\n")
+    slowprint("That is not a valid text speed. You can only choose Very Slow (1), Slow (2), Normal (3), Fast (4) or Very Fast (5).\n\n")
     time.sleep(0.5)
     start_game()
   os.system('cls' if os.name == 'nt' else "printf '\033c'")
